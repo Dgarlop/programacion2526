@@ -1,5 +1,4 @@
-numero=0
-
-for numero in range(3, 10, 3):
-    print (numero)
+for i in range(1, 11):
+    resultado = i*3
+    print (3, "x", i, "=", resultado)
 print("fin")
