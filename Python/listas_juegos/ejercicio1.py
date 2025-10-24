@@ -21,7 +21,9 @@ while opcion != "S":
             genero = input("Introduce el genero:")
             generos.append(genero)
     elif opcion == "E":
-        print("mostrando estadisticas")
+        print("Mostrando tu coleccion de juegos de la PSP")
+        for cantida in range(cantida):
+            print(nombres[cantida], "| Puntuaciones:", puntuaciones[cantida], "| genero:", generos[cantida])
     else:
         print("introduce un valor permitido")
 print("Saliendo...")
