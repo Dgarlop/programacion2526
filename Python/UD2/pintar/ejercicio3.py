@@ -1,0 +1,16 @@
+import turtle
+
+turtle.penup()
+turtle.goto(150,50)
+turtle.pendown()
+turtle.color('red')
+(turtle.right(90))
+turtle.forward(100)
+(turtle.left(90))
+turtle.forward(100)
+(turtle.left(90))
+turtle.forward(100)
+(turtle.left(90))
+turtle.forward(100)
+turtle.hideturtle()
+turtle.done()
