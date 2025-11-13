@@ -11,3 +11,5 @@ if "Martes" in diasSemanas:
 else:
     print("No esta")
 print(diasSemanas)
+
+
