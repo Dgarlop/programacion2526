@@ -13,8 +13,11 @@ def filacompleta(matriz):
 
 def columnaCompleta(matriz):
     pos_colum = int(input('Introduce la columna: '))
-    columna_completa = matriz[0][pos_colum],matriz[1][pos_colum],matriz[2][pos_colum]
-    return columna_completa
+    lista = []
+    for i in range(0,len(matriz)):
+        columna_completa = matriz[i][pos_colum]
+        lista.append(columna_completa)
+    return lista
 
 posicion = posicion_numero(matriz)
 print(posicion)
