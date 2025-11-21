@@ -1,0 +1,21 @@
+matriz = [[8,1,6], [3, 5, 7], [4, 9, 2]]
+
+def numero_pares(matriz):
+    lista = []
+    for i in range(0,len(matriz)):
+        fila = matriz[i]
+        for e in fila:
+            if e % 2 == 0:
+                lista.append(e)
+    return lista
+
+def sumaFila(lista):
+    suma = 0
+    for i in lista:
+        suma = i + suma
+    return suma
+
+pares = numero_pares(matriz)
+print(pares)    
+suma_pares = sumaFila(pares)
+print(suma_pares)
