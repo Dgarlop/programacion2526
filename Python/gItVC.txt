@@ -1,0 +1,1 @@
+Subo archivo a git desde interfaz grafica de VC
