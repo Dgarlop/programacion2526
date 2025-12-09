@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="examen_2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Python/UD1/examen/examen_2/busca_minas.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Python/UD1/examen/examen_2/cesta_compra.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
