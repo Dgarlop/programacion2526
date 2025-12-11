@@ -1,4 +1,4 @@
-package unidad2;
+package unidad2.Boletin_if;
 
 import java.util.Scanner;
 
