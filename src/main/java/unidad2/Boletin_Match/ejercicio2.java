@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class ejercicio2 {
     static void main(String[] args) {
-        //ejercicio 6 del boletin
-        Scanner numero = new Scanner(System.in);
+        //ejercicio6
+        Scanner numero_nuevo = new Scanner(System.in);
         System.out.println("Dime el numero de habtacion");
-        int num_habitacion = numero.nextInt();
-
-        switch (num_habitacion){
+        int nums = numero_nuevo.nextInt();
+        switch (nums){
             case 1:
                 System.out.println("Habitacion: 1.azul, Camas: 2, Planta: Primera");
                 break;
@@ -28,6 +27,7 @@ public class ejercicio2 {
             default:
                 System.out.println("No existe es habitacion, solo hay 1-5");
                 break;
+
         }
     }
 }
