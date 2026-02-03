@@ -7,17 +7,17 @@ public class NotaAsignatura {
     int notaTerceroTimestre;
 
 
-    //contructor
-    public NotaAsignatura(int notaTerceroTimestre, int notaSegundoTimestre, int notaPrimerTimestre, String nombre) {
-        this.notaTerceroTimestre = notaTerceroTimestre;
-        this.notaSegundoTimestre = notaSegundoTimestre;
-        this.notaPrimerTimestre = notaPrimerTimestre;
+    /*//contructor // Si lo pongo me sale incorrecto
+    public NotaAsignatura(String nombre, int notaPrimerTimestre, int notaSegundoTimestre, int notaTerceroTimestre) {
         this.nombre = nombre;
-    }
+        this.notaPrimerTimestre = notaPrimerTimestre;
+        this.notaSegundoTimestre = notaSegundoTimestre;
+        this.notaTerceroTimestre = notaTerceroTimestre;
+    }*/
 
     //metodos
     public void NotaMedia(){
-        int notaMedia = notaPrimerTimestre + notaSegundoTimestre + notaTerceroTimestre / 3;
+        int notaMedia = (notaPrimerTimestre + notaSegundoTimestre + notaTerceroTimestre) / 3;
         System.out.println("Nota media: " + notaMedia);
     }
 
@@ -46,11 +46,10 @@ public class NotaAsignatura {
 
     @Override
     public String toString() {
-        return "NotaAsignatura{" +
+        return "NotaAsignatura: " +
                 "nombre='" + nombre + '\'' +
                 ", notaPrimerTimestre=" + notaPrimerTimestre +
                 ", notaSegundoTimestre=" + notaSegundoTimestre +
-                ", notaTerceroTimestre=" + notaTerceroTimestre +
-                '}';
+                ", notaTerceroTimestre=" + notaTerceroTimestre;
     }
 }
