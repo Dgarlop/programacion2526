@@ -1,7 +1,7 @@
 package unidad2;
 
 public class Diego {
-     static void main() {
+    /* static void main() {
        String frase = "12/05/2025";
        String patronFrase = "\\d{2}/\\d{2}/\\d{4}";
        String dni = "12345678C";
@@ -17,5 +17,5 @@ public class Diego {
          System.out.println(matricula+" "+matricula.matches(patronMatricula));
          System.out.println(matricula2+" "+matricula2.matches(patronMatricula));
          System.out.println(correo+" "+correo.matches(patronCorreo));
-    }
+    }*/
 }
