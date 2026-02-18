@@ -1,11 +1,13 @@
 package unidad2.Simulacro;
+import java.time.LocalDate;
+
 
 public class Incidente {
     private int identificador;
     private Equipo nombre;
     private String descripcion;
-    private String fechaApertura;
-    private String fechaCerrado;
+    private LocalDate fechaApertura;
+    private LocalDate fechaCerrado;
     private Estado estado;
     private Criticidad criticidad;
 
@@ -15,14 +17,13 @@ public class Incidente {
         nombre.setIncidentes(num);
     }
 
-    public Incidente(int identificador, String descripcion, String fechaApertura, String fechaCerrado, Estado estado, Criticidad criticidad) {
+    public Incidente(int identificador, String descripcion, LocalDate fechaCerrado, Estado estado, Criticidad criticidad) {
         this.identificador = identificador;
-        this.nombre = nombre;
         this.descripcion = descripcion;
-        this.fechaApertura = fechaApertura;
         this.fechaCerrado = fechaCerrado;
         this.estado = estado;
         this.criticidad = criticidad;
+        this.fechaApertura = LocalDate.now();
     }
 
     public int getIdentificador() {
@@ -49,19 +50,19 @@ public class Incidente {
         this.descripcion = descripcion;
     }
 
-    public String getFechaApertura() {
+    public LocalDate getFechaApertura() {
         return fechaApertura;
     }
 
-    public void setFechaApertura(String fechaApertura) {
+    public void setFechaApertura(LocalDate fechaApertura) {
         this.fechaApertura = fechaApertura;
     }
 
-    public String getFechaCerrado() {
+    public LocalDate getFechaCerrado() {
         return fechaCerrado;
     }
 
-    public void setFechaCerrado(String fechaCerrado) {
+    public void setFechaCerrado(LocalDate fechaCerrado) {
         this.fechaCerrado = fechaCerrado;
     }
 
@@ -85,20 +86,26 @@ public class Incidente {
         if (estado.equals(Estado.CERRADA)){
         }
         else{
-            fechaCerrado = "";
+            fechaCerrado = null;
         }
     }
 
-    public void esUrgente(){
-        if (criticidad.equals(Criticidad.CRITICA)){
-            System.out.println("Es Urgente");
+    public boolean esUrgente(){
+        boolean urgente = false;
+        LocalDate hoy = LocalDate.now();
+        if (criticidad == Criticidad.CRITICA){
+            urgente = true;
         }
-        else if (criticidad.equals(Criticidad.GRAVE) && fechaCerrado.equals("Null")){
-            System.out.println("Es Urgente");
+        else if (this.criticidad == Criticidad.GRAVE && this.estado != Estado.CERRADA && hoy.minusDays(7).isAfter(this.fechaApertura)){
+            urgente = true;
+        }
+        else if (this.criticidad == Criticidad.MEDIA && this.estado != Estado.CERRADA && hoy.minusDays(30).isAfter(this.fechaApertura)){
+            urgente = true;
         }
         else {
-            System.out.println("No es Urgente");
+            urgente = false;
         }
+        return urgente;
     }
 
     @Override
