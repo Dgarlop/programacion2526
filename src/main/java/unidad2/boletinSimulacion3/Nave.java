@@ -6,12 +6,15 @@ public class Nave {
     private String codigoRegistro;
     private String modelo;
     private int hVuelo;
+    private Comandante comandante;
 
-    public Nave(String codigoRegistro, String modelo, int hVuelo) {
+    public Nave(String codigoRegistro, String modelo, int hVuelo, Comandante comandante) {
         this.codigoRegistro = codigoRegistro;
         this.modelo = modelo;
         this.hVuelo = hVuelo;
+        this.comandante = comandante;
     }
+
 
     public String getCodigoRegistro() {
         return codigoRegistro;
@@ -37,6 +40,14 @@ public class Nave {
         this.hVuelo = hVuelo;
     }
 
+    public Comandante getComandante() {
+        return comandante;
+    }
+
+    public void setComandante(Comandante comandante) {
+        this.comandante = comandante;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -55,6 +66,7 @@ public class Nave {
                 "codigoRegistro='" + codigoRegistro + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", hVuelo=" + hVuelo +
+                ", comandante=" + comandante +
                 '}';
     }
 }

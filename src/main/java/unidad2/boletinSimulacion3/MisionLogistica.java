@@ -7,4 +7,12 @@ public class MisionLogistica extends Mision {
         super(codigoNumerico, nombreClave, naveAsignada, estado);
         this.carga = carga;
     }
+
+    @Override
+    public String toString() {
+        return "MisionLogistica{" +
+                "nombre= " + getNombreClave() + " naveAsignada= " + getNaveAsignada()+
+                " carga=" + carga +
+                '}';
+    }
 }
