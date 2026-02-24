@@ -1,4 +1,7 @@
-package unidad2.boletinEstaticos.boletin1;
+package unidad2.boletinEstaticos.boletin1.contoller;
+
+import unidad2.boletinEstaticos.boletin1.model.Cliente;
+import unidad2.boletinEstaticos.boletin1.model.CuentaBancaria;
 
 import java.time.LocalDate;
 

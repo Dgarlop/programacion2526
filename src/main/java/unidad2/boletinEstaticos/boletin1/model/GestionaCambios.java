@@ -1,4 +1,4 @@
-package unidad2.boletinEstaticos.boletin1;
+package unidad2.boletinEstaticos.boletin1.model;
 
 public class GestionaCambios {
     static void main(String[] args) {

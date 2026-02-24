@@ -1,6 +1,4 @@
-package unidad2.boletinEstaticos.boletin1;
-
-import java.time.LocalDate;
+package unidad2.boletinEstaticos.boletin1.model;
 
 public class Conversor{
 

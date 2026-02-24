@@ -1,4 +1,4 @@
-package unidad2.boletinEstaticos.boletin1;
+package unidad2.boletinEstaticos.boletin1.model;
 
 public class Cliente {
     private String nombre;
