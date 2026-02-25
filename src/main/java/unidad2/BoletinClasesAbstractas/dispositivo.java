@@ -6,7 +6,7 @@ import java.util.Objects;
 public class dispositivo {
     private String id;
     private String mac;
-    private estado estado;
+    private estadowifi estado;
     private LocalDate actualizacion;
 
     void conectarwifi(){

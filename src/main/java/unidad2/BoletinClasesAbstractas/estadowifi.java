@@ -1,5 +1,5 @@
 package unidad2.BoletinClasesAbstractas;
 
-public enum estado {
+public enum estadowifi {
     ON_SINWIFI, ON_CONECTADO, OFF, ALERTA, AVERIADO;
 }
