@@ -5,37 +5,38 @@ import unidad3.exepciones.boletinE2.excepcionespropias.MiExepcion;
 import java.util.Scanner;
 
 public class TraductorMorse {
-    void metodo1(){
-        throw new MiExepcion("Ejecucion de la exepcion");
-    }
-
-    boolean traducir (){
+    boolean traducir (String texto){
         boolean invalido = false;
-        Scanner sc = new Scanner(System.in);
-        String texto = sc.nextLine();
-        String validaLetras="[a-z]+";
+        String validaLetras="^[\\p{L}\\s.,;:!?'\"\\-]+$";
         System.out.println(texto+" "+texto.matches(validaLetras));
-        if (texto.matches(validaLetras)){
-            invalido = false;
+        if (!texto.matches(validaLetras)){
+            invalido = true;
+            throw new MiExepcion("Cadena con caracteres especiales" + texto);
         }
         else {
-            invalido = true;
+            invalido = false;
         }
         return invalido;
     }
     static void main(String[] args) {
         TraductorMorse morse = new TraductorMorse();
-        if (morse.traducir()){
+        System.out.println("Dame un texto");
+        Scanner sc = new Scanner(System.in);
+        String texto = sc.nextLine();
+        while (!texto.equals(("fin"))) {
+            boolean valido = false;
             try{
-                morse.metodo1();
-            }catch(MiExepcion e){
-                System.out.println(e.toString());
+                valido = morse.traducir(texto);
+            }catch (MiExepcion ex){
+                System.out.println(ex);
             }
-        }else{
-            System.out.println("Texto correcto");
+            finally {
+                System.out.println("Dame un texto");
+                texto = sc.nextLine();
+                System.out.println(valido);
+            }
+
+
         }
-
-
-
     }
 }
