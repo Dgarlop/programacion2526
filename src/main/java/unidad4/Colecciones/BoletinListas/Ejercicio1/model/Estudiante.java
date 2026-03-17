@@ -1,4 +1,4 @@
-package unidad4.Colecciones.BoletinListas.model;
+package unidad4.Colecciones.BoletinListas.Ejercicio1.model;
 
 import java.util.Objects;
 

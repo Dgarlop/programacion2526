@@ -1,10 +1,8 @@
-package unidad4.Colecciones.BoletinListas.controller;
+package unidad4.Colecciones.BoletinListas.Ejercicio1.controller;
 
-import unidad4.Colecciones.BoletinListas.model.Estudiante;
+import unidad4.Colecciones.BoletinListas.Ejercicio1.model.Estudiante;
 
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 
 public class GestionaEstudiantes {
