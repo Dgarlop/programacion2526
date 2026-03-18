@@ -1,5 +1,4 @@
 package unidad4.Colecciones.BoletinListas.Ejericio2.Model;
-
 import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -59,4 +58,14 @@ public class Libro {
         this.estado = estado;
     }
 
+    @Override
+    public String toString() {
+        return "Libro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", genero='" + genero + '\'' +
+                ", annoPublicacion=" + annoPublicacion +
+                ", estado=" + estado +
+                '}';
+    }
 }
