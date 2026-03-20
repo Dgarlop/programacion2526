@@ -30,6 +30,7 @@ public class Biblioteca {
         librerira.add(libroNuevo);
     }
     public void prestar(Prestamo prestamo) {
+        Boolean pre = false;
         r.addPrestamo(prestamo);
         prestarLibro(librerira);
     }
