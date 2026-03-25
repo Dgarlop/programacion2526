@@ -1,6 +1,6 @@
 package unidad4.Colecciones.Boletin5.ejercicio2.models;
 
-import unidad2.boletinOrdenaciones.Ejercicio2.exceptions.HistorialException;
+import unidad4.Colecciones.Boletin5.ejercicio2.exceptions.HistorialException;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

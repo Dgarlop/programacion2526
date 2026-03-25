@@ -1,4 +1,4 @@
-package unidad4.Colecciones.BoletinListas.Ejericio2.Controller;
+/*package unidad4.Colecciones.BoletinListas.Ejericio2.Controller;
 
 import unidad4.Colecciones.BoletinListas.Ejericio2.Model.Biblioteca;
 import unidad4.Colecciones.BoletinListas.Ejericio2.Exceptions.BibliotecaException;
@@ -16,7 +16,7 @@ public class GestionaBiblioteca {
         Libro libro1 = new Libro("titulo", "autor", "genero", 2025, Estado.PRESTADO);
         Libro libro2 = new Libro("tete", "autor", "genero", 2025, Estado.PRESTADO);
 
-        librerira.add(libro2);
+        libro1.add(libro2);
 
         int opcion = g.menu();
         while(opcion != 7){
@@ -75,4 +75,4 @@ public class GestionaBiblioteca {
         int opcion = numero.nextInt();
         return opcion;
     }
-}
+}*/

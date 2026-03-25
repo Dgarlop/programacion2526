@@ -1,8 +1,8 @@
 package unidad4.Colecciones.Boletin5.ejercicio2.controller;
 
-import unidad2.boletinOrdenaciones.Ejercicio2.exceptions.HistorialException;
-import unidad2.boletinOrdenaciones.Ejercicio2.models.Historial;
-import unidad2.boletinOrdenaciones.Ejercicio2.models.PaginaWeb;
+import unidad4.Colecciones.Boletin5.ejercicio2.exceptions.HistorialException;
+import unidad4.Colecciones.Boletin5.ejercicio2.models.Historial;
+import unidad4.Colecciones.Boletin5.ejercicio2.models.PaginaWeb;
 
 import java.time.LocalDate;
 
