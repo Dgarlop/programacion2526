@@ -59,4 +59,12 @@ public class Influencer {
     public int hashCode() {
         return Objects.hash(nick, plataforma);
     }
+
+    @Override
+    public String toString() {
+        return "Influencer{" +
+                ", nick='" + nick + '\'' +
+                ", plataforma='" + plataforma + '\'' +
+                '}';
+    }
 }

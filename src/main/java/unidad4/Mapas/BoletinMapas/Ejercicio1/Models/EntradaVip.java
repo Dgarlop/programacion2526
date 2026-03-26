@@ -47,4 +47,12 @@ public class EntradaVip {
         this.estado = estado;
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "EntradaVip{" +
+                ", tipo=" + tipo +
+                ", estado=" + estado +
+                '}';
+    }
 }
