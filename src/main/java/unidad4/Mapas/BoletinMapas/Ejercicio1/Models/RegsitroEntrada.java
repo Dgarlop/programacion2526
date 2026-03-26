@@ -1,8 +1,6 @@
 package unidad4.Mapas.BoletinMapas.Ejercicio1.Models;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
 
 public class RegsitroEntrada {
     private Map<Influencer, EntradaVip> entradas = new HashMap<Influencer, EntradaVip>();
@@ -47,9 +45,9 @@ public class RegsitroEntrada {
         Iterator<EntradaVip> iterator = entradas.values().iterator();
 
         while(iterator.hasNext()){
-            if (iterator.next().getEstado().equals(Estado.CONFIRMADA)){
-                EntradaVip eConfirmada = entradas.get();
-                System.out.println(eConfirmada.toString());
+            EntradaVip entradaEncontrada = iterator.next();
+            if (entradaEncontrada.getEstado().equals(Estado.CONFIRMADA)) {
+                System.out.println(entradaEncontrada.toString());
             }
             else {
 
@@ -58,11 +56,29 @@ public class RegsitroEntrada {
     }
     public void listaCancelados(){
         Iterator<EntradaVip> iterator = entradas.values().iterator();
+
         while(iterator.hasNext()){
-            if (iterator.next().getEstado() == Estado.CANCELADA){
-                System.out.println(entradas.toString());
+            EntradaVip entradaEncontrada = iterator.next();
+            if (entradaEncontrada.getEstado().equals(Estado.CANCELADA)) {
+                System.out.println(entradaEncontrada.toString());
             }
             else {
+
+            }
+        }
+    }
+
+    public void numSeguidores(){
+        Iterator<Influencer> iterator = entradas.keySet().iterator();
+        TreeSet<Influencer> topInfluencers = new TreeSet<Influencer>();
+        int seguidores = 0;
+        while(iterator.hasNext()){
+            Influencer in = iterator.next();
+            if (in.getNumSeguidores() > seguidores) {
+                seguidores = in.getNumSeguidores();
+            }
+            if (in.getNumSeguidores() == seguidores) {
+                System.out.println(in.toString());
 
             }
         }
