@@ -1,10 +1,18 @@
 package unidad4.Colecciones.BoletinListas.Ejercicio1.model;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Estudiante {
     private String nombre;
     private int identificador;
+    private List<Double> notas;
+
+    public Estudiante(String nombre, int identificador, List<Double> notas) {
+        this.nombre = nombre;
+        this.identificador = identificador;
+        this.notas = notas;
+    }
 
     public Estudiante(String nombre, int identificador) {
         this.nombre = nombre;
