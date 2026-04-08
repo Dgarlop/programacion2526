@@ -1,9 +1,8 @@
-package unidad4.Colecciones.BoletinListas.Ejericio2.Model;
+package unidad4.Colecciones.BoletinListas.Ejericio3.Model;
 
-import unidad4.Colecciones.BoletinListas.Ejericio2.Exceptions.BibliotecaException;
+import unidad4.Colecciones.BoletinListas.Ejericio3.Exceptions.BibliotecaException;
 
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Scanner;
 

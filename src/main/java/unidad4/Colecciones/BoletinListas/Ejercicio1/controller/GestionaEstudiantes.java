@@ -8,7 +8,7 @@ import java.util.List;
 
 public class GestionaEstudiantes {
     static void main(String[] args) {
-        Estudiante e1 = new Estudiante("Diego", 1);
+        Estudiante e1 = new Estudiante("Diego", 1,new ArrayList<>());
         Estudiante e2 = new Estudiante("Maria Isabel", 2);
         Estudiante e3 = new Estudiante("Diego", 3);
         List<Estudiante> listaEstudiantes = new ArrayList<Estudiante>();

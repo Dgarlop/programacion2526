@@ -1,7 +1,6 @@
-package unidad4.Colecciones.BoletinListas.Ejericio2.Model;
+package unidad4.Colecciones.BoletinListas.Ejericio3.Model;
 
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 
 public class RepositorioPrestamos {
     LinkedHashSet<Prestamo> prestamos;

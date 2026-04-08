@@ -6,9 +6,9 @@ import java.util.Objects;
 public class Estudiante {
     private String nombre;
     private int identificador;
-    private List<Double> notas;
+    private List<Integer> notas;
 
-    public Estudiante(String nombre, int identificador, List<Double> notas) {
+    public Estudiante(String nombre, int identificador, List<Integer> notas) {
         this.nombre = nombre;
         this.identificador = identificador;
         this.notas = notas;

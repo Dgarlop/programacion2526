@@ -1,7 +1,4 @@
-package unidad4.Colecciones.BoletinListas.Ejericio2.Model;
-import java.sql.SQLOutput;
-import java.time.LocalDate;
-import java.util.Scanner;
+package unidad4.Colecciones.BoletinListas.Ejericio3.Model;
 
 public class Libro {
     private String titulo;

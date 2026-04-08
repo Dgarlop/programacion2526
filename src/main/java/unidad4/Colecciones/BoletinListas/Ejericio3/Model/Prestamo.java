@@ -1,4 +1,4 @@
-package unidad4.Colecciones.BoletinListas.Ejericio2.Model;
+package unidad4.Colecciones.BoletinListas.Ejericio3.Model;
 
 import java.time.LocalDate;
 import java.util.Objects;
